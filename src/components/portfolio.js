@@ -18,6 +18,7 @@ import {
   FaLightbulb,
   FaClock,
   FaTasks,
+  FaArrowUp 
 } from "react-icons/fa";
 import {
   SiMui,
@@ -368,7 +369,7 @@ const Portfolio = () => {
           © {new Date().getFullYear()} Gopika Gopakumar. All rights reserved.
         </p>
         <div className="scroll-top" onClick={scrollToTop}>
-          ⬆ Back to Top
+        <FaArrowUp size={20} /> Back to Top
         </div>
       </footer>
     </div>
