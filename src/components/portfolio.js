@@ -193,6 +193,8 @@ const Portfolio = () => {
               <FaNodeJs /> Node.js
             </div>
             <div className="skills-category">Express.js</div>
+            <div className="skills-category">Firebase</div>
+            <div className="skills-category">Next js</div>
             <div className="skills-category">
               <SiPostgresql /> PostgreSQL
             </div>
@@ -215,7 +217,7 @@ const Portfolio = () => {
             <div className="skills-category">
               <FaGitAlt /> Git/GitHub
             </div>
-            <div className="skills-category">Agile (Scrum, Kanban)</div>
+            {/* <div className="skills-category">Agile (Scrum, Kanban)</div> */}
             <div className="skills-category">
               <FaPython /> Python
             </div>
