@@ -23,10 +23,10 @@ import {
 import {
   SiMui,
   SiPostgresql,
-  SiMongodb,
-  SiTypescript,
+  // SiMongodb,
+  // SiTypescript,
   SiJira,
-  SiDocker,
+  // SiDocker,
   SiC,
   SiCplusplus,
 } from "react-icons/si";
@@ -198,19 +198,19 @@ const Portfolio = () => {
             <div className="skills-category">
               <SiPostgresql /> PostgreSQL
             </div>
-            <div className="skills-category">
+            {/* <div className="skills-category">
               <SiMongodb /> MongoDB
-            </div>
-            <div className="skills-category">
+            </div> */}
+            {/* <div className="skills-category">
               <SiTypescript /> TypeScript
-            </div>
+            </div> */}
             <div className="skills-category">
-              <FaAws /> AWS (Cognito, Lambda)
+              <FaAws /> AWS Cognito
             </div>
-            <div className="skills-category">CI/CD</div>
-            <div className="skills-category">
+            {/* <div className="skills-category">CI/CD</div> */}
+            {/* <div className="skills-category">
               <SiDocker /> Docker
-            </div>
+            </div> */}
             <div className="skills-category">
               <SiJira /> Jira
             </div>
