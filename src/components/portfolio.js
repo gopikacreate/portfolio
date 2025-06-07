@@ -18,7 +18,7 @@ import {
   FaLightbulb,
   FaClock,
   FaTasks,
-  FaArrowUp 
+  FaArrowUp,
 } from "react-icons/fa";
 import {
   SiMui,
@@ -135,9 +135,8 @@ const Portfolio = () => {
               LBS Institute Of Technology for Women, Kerala, India
             </strong>
           </a>{" "}
-          and thrive on building seamless, user-friendly web applications.
-         
-          My tech journey kicked off at my first job, where I got hands-on
+          and thrive on building seamless, user-friendly web applications. My
+          tech journey kicked off at my first job, where I got hands-on
           experience with React.js, Material-UI, and REST APIs. I was thrown
           into the deep end taking over the front-end of a project all on my
           own. It was challenging, but that experience made me way more
@@ -249,6 +248,24 @@ const Portfolio = () => {
       <section id="experience" className="experience-section">
         <h2>Experience</h2>
         <div className="experience-card">
+          <p className="experience-date">May 2025 – Present</p>
+          <a
+            href="https://www.iorbit-tech.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="experience-title"
+          >
+            Embedded Developer · iOrbit Digital Technologies
+          </a>
+          <p>
+            Hands-on experience in programming embedded systems for healthcare
+            devices using C and Embedded C, working with various
+            microcontrollers and IDEs to develop, test firmware modules, and
+            integrate sensors with communication protocols like UART, SPI, and
+            I2C.
+          </p>
+        </div>
+        <div className="experience-card">
           <p className="experience-date">July 2022 – July 2024</p>
           <a
             href="https://xminds.com"
@@ -314,30 +331,13 @@ const Portfolio = () => {
               <FaReact /> <SiMui /> <FaAws />
             </div>
           </div>
-          <div className="project-card">
-            <h3>Pixovo</h3>
-            <p>
-              Developed a user-friendly interface, enhancing user experience and
-              accessibility.
-            </p>
-            <div className="tech-stack">
-              <FaReact /> <SiMui />
-            </div>
-          </div>
-          <div className="project-card">
-            <h3>Comeonda</h3>
-            <p>
-              Created a responsive web application, optimizing data
-              functionality and UI performance.
-            </p>
-            <div className="tech-stack">
-              <FaReact /> <SiMui /> <FaNodeJs />
-            </div>
-          </div>
+        
+        
           <div className="project-card">
             <h3>Smart Irrigation System</h3>
             <p>
-            Designed a prototype to improve water efficiency in irrigation systems using Arduino and sensors.
+              Designed a prototype to improve water efficiency in irrigation
+              systems using Arduino and sensors.
             </p>
             <div className="tech-stack">
               <SiC /> <SiCplusplus />
@@ -357,7 +357,8 @@ const Portfolio = () => {
           <div className="project-card">
             <h3>Diabetic Retinopathy Detection</h3>
             <p>
-            Compared pre-built models for accurate retinal abnormality detection using deep learning.
+              Compared pre-built models for accurate retinal abnormality
+              detection using deep learning.
             </p>
             <div className="tech-stack">
               <FaPython /> <FaBrain />
@@ -371,7 +372,7 @@ const Portfolio = () => {
           © {new Date().getFullYear()} Gopika Gopakumar. All rights reserved.
         </p>
         <div className="scroll-top" onClick={scrollToTop}>
-        <FaArrowUp size={20} /> Back to Top
+          <FaArrowUp size={20} /> Back to Top
         </div>
       </footer>
     </div>
