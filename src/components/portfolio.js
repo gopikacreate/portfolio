@@ -30,6 +30,7 @@ import {
   SiC,
   SiCplusplus,
   SiNextdotjs,
+  SiAngular 
 } from "react-icons/si";
 
 const Portfolio = () => {
@@ -206,6 +207,9 @@ const Portfolio = () => {
             </div> */}
             <div className="skills-category">
               <FaAws /> AWS Cognito
+            </div>
+             <div className="skills-category">
+              <SiAngular /> Angular
             </div>
             {/* <div className="skills-category">CI/CD</div> */}
             {/* <div className="skills-category">
