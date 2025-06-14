@@ -385,6 +385,22 @@ const Portfolio = () => {
              <FaReact /> <FaDatabase />
             </div>
           </div>
+            <div className="project-card">
+            <a
+              href="https://recipeapp-murex.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Recipe App</h3>
+            </a>
+
+            <p>
+          Created a responsive meal planner app with multi-dish slots and a persistent grocery checklist.
+            </p>
+            <div className="tech-stack">
+            <SiNextdotjs /> <FaDatabase />
+            </div>
+          </div>
 
           <div className="project-card">
             <h3>Smart Irrigation System</h3>
