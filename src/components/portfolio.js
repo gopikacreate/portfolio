@@ -6,11 +6,9 @@ import {
   FaInstagram,
   FaFacebook,
   FaSpotify,
-  FaBrain,
   FaReact,
   FaJsSquare,
   FaNodeJs,
-  FaDatabase,
   FaAws,
   FaGitAlt,
   FaPython,
@@ -29,9 +27,9 @@ import {
   // SiDocker,
   SiC,
   SiCplusplus,
-  SiNextdotjs,
-  SiAngular 
+  SiAngular,
 } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,14 +56,25 @@ const Portfolio = () => {
             <a href="#experience">Experience</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+              <Link to="/projects">Projects</Link>
+            {/* <a href="#projects">Projects</a> */}
           </li>
           {/* <li>
             <a href="#certificates">Certificates</a>
           </li> */}
           <li>
-            <a href="/resume.pdf" download="resume.pdf">
-              Get Resume
+            <a href="/Gopika 1-page-Resume.pdf" download="Gopika 1-page-Resume.pdf">
+             1-Page Resume
+            </a>
+          </li>
+          <li>
+            <a href="/Gopika 2-page-Resume.pdf" download="Gopika 2-page-Resume.pdf">
+            2-Page Resume
+            </a>
+          </li>
+          <li>
+            <a href="/Gopika Detailed Resume .pdf" download="Gopika Detailed Resume .pdf">
+            Detailed Resume
             </a>
           </li>
         </ul>
@@ -208,7 +217,7 @@ const Portfolio = () => {
             <div className="skills-category">
               <FaAws /> AWS Cognito
             </div>
-             <div className="skills-category">
+            <div className="skills-category">
               <SiAngular /> Angular
             </div>
             {/* <div className="skills-category">CI/CD</div> */}
@@ -323,118 +332,7 @@ const Portfolio = () => {
           </p>
         </div>
       </section>
-      <section id="projects" className="projects-section">
-        <h2>Projects</h2>
-        <div className="projects-container">
-          <div className="project-card">
-            <h3>Datafree Portal</h3>
-            <p>
-              Built an interactive web application, streamlining data access for
-              500+ users.
-            </p>
-            <div className="tech-stack">
-              <FaReact /> <SiMui /> <FaAws />
-            </div>
-          </div>
-          <div className="project-card">
-            <a
-              href="https://blog-temp-livid.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Simply Scribbled</h3>
-            </a>
-
-            <p>
-              Built a personal blogging platform using Next.js and Firebase for
-              secure content management and real-time updates.
-            </p>
-            <div className="tech-stack">
-              <SiNextdotjs /> <FaDatabase />
-            </div>
-          </div>
-           <div className="project-card">
-            <a
-              href="https://taskapp-ashy.vercel.app/dashboard"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Tusk</h3>
-            </a>
-
-            <p>
-             Built a competitive task management app using Next.js and Firebase, enabling real-time productivity duels, secure pairing via unique codes, and live scoreboard tracking.
-            </p>
-            <div className="tech-stack">
-              <SiNextdotjs /> <FaDatabase />
-            </div>
-          </div>
-           <div className="project-card">
-            <a
-              href="https://norway-blog-cyan.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Norway Blog</h3>
-            </a>
-
-            <p>
-             Developed a travel blog website designed to be fully responsive, delivering an optimal experience on both mobile and desktop devices.
-            </p>
-            <div className="tech-stack">
-             <FaReact /> <FaDatabase />
-            </div>
-          </div>
-            <div className="project-card">
-            <a
-              href="https://recipeapp-murex.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Recipe App</h3>
-            </a>
-
-            <p>
-          Created a responsive meal planner app with multi-dish slots and a persistent grocery checklist.
-            </p>
-            <div className="tech-stack">
-            <SiNextdotjs /> <FaDatabase />
-            </div>
-          </div>
-
-          <div className="project-card">
-            <h3>Smart Irrigation System</h3>
-            <p>
-              Designed a prototype to improve water efficiency in irrigation
-              systems using Arduino and sensors.
-            </p>
-            <div className="tech-stack">
-              <SiC /> <SiCplusplus />
-            </div>
-          </div>
-          <div className="project-card">
-            <h3>Library Management System</h3>
-            <p>
-              Developed a streamlined system for managing library operations
-              efficiently.
-            </p>
-            <div className="tech-stack">
-              <FaDatabase />
-            </div>
-          </div>
-
-          <div className="project-card">
-            <h3>Diabetic Retinopathy Detection</h3>
-            <p>
-              Compared pre-built models for accurate retinal abnormality
-              detection using deep learning.
-            </p>
-            <div className="tech-stack">
-              <FaPython /> <FaBrain />
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       <footer className="footer">
         <p>
